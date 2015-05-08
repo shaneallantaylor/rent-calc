@@ -7,6 +7,25 @@ html, body {
   font-weight: 100;
 }
 
+input {
+  text-align: center;
+  height: 17px;
+}
+
+input:focus {
+  outline: none;
+  border-color:#f66;
+  border-style: solid;
+  box-shadow:0 0 4px #f66;
+}
+
+input:active {
+  outline: none;
+  border-color:#f66;
+  border-style: solid;
+  box-shadow:0 0 0px #f66;
+}
+
 .title {
   margin-top: 1.2em;
   margin-bottom: 0;
@@ -16,12 +35,64 @@ html, body {
 
 .sub-title {
   margin-top: 5px;
+  margin-bottom: 10px;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.8em;
 }
 
 .pink {
   color: #f66;
+}
+
+.question {
+  /*position: absolute;*/
+  left: 0;
+  right: 0;
+  text-align: center
+}
+
+.q2 {
+  position: relative;
+}
+
+.income {
+  height: 17px;
+}
+
+.button-container.nope {
+  display: none;
+}
+
+.button-container {
+  display: block;
+}
+
+.continue.nope {
+  opacity: 0;
+}
+
+.continue {
+  /*display: block;*/
+  position: relative;
+  top: 20px;
+  left: 66%;
+  background: #fff;
+  border-color:#f66;
+  border-style: solid;
+  color: #f66;
+  padding: 3px 30px 3px 30px;
+  opacity: 1;
+  transition: opacity 25s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+}
+
+.freq {
+  width: 160px;
+}
+
+.results {
+  margin: 4em;
 }
 
 .progress-bar-bg {
@@ -29,7 +100,18 @@ html, body {
   height: 30px;
   width: 120%;
   left: -10px;
-  background: #000;
+  background: #333;
+}
+
+.progress {
+  height: 33px;
+  width: 105%;
+  left: -105%;
+  background: #f66;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out; /** Chrome & Safari **/
+  -moz-transition: all 1s ease-in-out; /** Firefox **/
+  -o-transition: all 1s ease-in-out; /** Opera **/
 }
 
 #top {
@@ -39,9 +121,19 @@ html, body {
   border-bottom-width: 5px;
 }
 
+#prog-top {
+  position: fixed;
+  top:0;
+}
+
 #bottom {
   bottom: 0;
   border-style: solid;
   border-top-color: #f66;
   border-top-width: 5px;
+}
+
+#prog-bottom {
+  position: fixed;
+  bottom:0;
 }
