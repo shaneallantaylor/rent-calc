@@ -44,6 +44,11 @@ input:active {
   color: #f66;
 }
 
+.dollar-sign {
+  color: #f66;
+  font-size: 18px;
+}
+
 .question {
   /*position: absolute;*/
   left: 0;
@@ -69,6 +74,13 @@ input:active {
 
 .continue.nope {
   opacity: 0;
+  left: 200%;
+}
+
+.nope {
+  position: absolute;
+  opacity: 0;
+  left: 200%;
 }
 
 .continue {
