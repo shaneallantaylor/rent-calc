@@ -35,7 +35,7 @@ $(document).ready(function(){
   $(".household-size").keyup(function() {
     if ($('.household-size').length > 0 && $('.household-size').val() != '') {
       $('#cont1').removeClass('nope');
-      console.log('Cont1 is SHOWN!');
+      $('.progress').css("left", "-66%");
     }
     else {
       $('.continue').addClass('nope');
@@ -72,7 +72,7 @@ $(document).ready(function(){
   $('#cont1').click(function() {
     FAMILY_SIZE = $('.household-size').val();
     console.log(FAMILY_SIZE);
-    $('.progress').css("left", "-66%");
+    $('.progress').css("left", "-33%");
     $('.q1').addClass('hidden');
     $('.q2').removeClass('hidden');
     $('.continue').addClass('nope');
@@ -83,18 +83,25 @@ $(document).ready(function(){
     console.log(HOW_MUCH);
     FREQ_SELECTION = $('.freq').val();
     console.log(FREQ_MULTIPLIER);
-    $('.progress').css("left", "-33%");
+    $('.progress').css("left", "-0%");
     $('.q2').addClass('hidden');
-
+    $('.sub-title').addClass('hidden');
+    $('.results').removeClass('nope');
+    $('.details').removeClass('nope');
+    $('.monthly-rent-suggestion').append('$' + HOW_MUCH);
     // DO CALCULATION (exclude hours per week) and
     // show result
 
   });
 
     $('#cont3').click(function() {
-      $('.progress').css("left", "-33%");
+      $('.progress').css("left", "-0%");
       $('.q2').addClass('hidden');
       $('.specific').addClass('hidden');
+      $('.sub-title').addClass('hidden');
+      $('.results').removeClass('nope');
+      $('.details').removeClass('nope');
+      $('.monthly-rent-suggestion').append('$800');
       // DO CALCULATION (include hours per week) and
       // show result
       console.log(HOW_MUCH);
