@@ -26,6 +26,24 @@ input:active {
   box-shadow:0 0 0px #f66;
 }
 
+a:link {
+  text-decoration: none;
+  color: #333;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
 .title {
   margin-top: 1.2em;
   margin-bottom: 0;
@@ -109,6 +127,34 @@ input:active {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
+}
+
+.explanation {
+  margin-top: 45px;
+  text-align: -webkit-center;
+  font-size: x-large;
+}
+
+.mfi-status {
+  margin-top: -3px;
+  text-align: -webkit-center;
+}
+
+.larger-text {
+  font-size: larger;
+}
+
+.mfi-exp {
+  margin-top: -18px;
+}
+
+.search-county {
+  text-align: -webkit-center;
+  position: absolute;
+  bottom: 220px;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 3vw;
 }
 
 .progress-bar-bg {

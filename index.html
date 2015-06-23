@@ -23,8 +23,8 @@
     <!-- Add your site or application content here -->
     <div class="progress-bar-bg" id="top"></div>
     <div class="progress" id="prog-top"></div>
-    <div class="progress-bar-bg" id="bottom"></div>
-    <div class="progress" id="prog-bottom"></div>
+    <div class="progress-bar-bg hidden" id="bottom"></div>
+    <div class="progress hidden" id="prog-bottom"></div>
 
     <p class="title">how much should I be paying for <span class="pink">rent?</span></p>
     <p class="sub-title">let us ask you a few questions and we’ll give you a suggestion - and some <span class="pink">explanations</span></p>
@@ -73,7 +73,14 @@
       <p class="suggestion pink"><span class="monthly-rent-suggestion"></span> per month</p>
     </div>
     <div class="details nope">
-      <p class="explanation">:andlords typically want your <span class="pink">monthly income</span> to be <span class="pink">3 times</span> the amount of rent</p>
+      <p class="explanation">Landlords typically want your <span class="pink">monthly income</span> to be <span class="pink">3 times</span> the amount of rent</p>
+    </div>
+    <div class="mfi-status nope">
+      <p class="larger-text">your household is at <span class="mfi pink"></span><span class="pink">% of the Median Family Income (MFI)</span></p>
+      <p class="mfi-exp hidden">this means that you may qualify for housing that was developed for households making less than <span class="mfi-rounded-up"></span>% of the MFI</p>
+    </div>
+    <div class="search-county nope">
+      <a class="search-link" href="" target="_blank"><p>click here to search <span class="pink">LA County</span> for housing in this <span class="pink">price range</span></p></a>
     </div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
